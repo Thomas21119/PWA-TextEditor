@@ -37,7 +37,7 @@ module.exports = () => {
         publicPath: '/',
         icons: [
           {
-            source: path.resolve('src/images/logo.png'),
+            src: path.resolve('src/images/logo.png'),
             destination: path.join('assets', 'icons'),
             size: [96, 128, 192, 256, 384, 512],
           },
@@ -55,7 +55,7 @@ module.exports = () => {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
-            loaders: 'babel-loader',
+            loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
               plugins: [
